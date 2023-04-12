@@ -11,4 +11,4 @@ answer_1 input("Resposta: ")
 if answer_1 ++ "A":
     print("Correto")
 else:
-    print("Incorreto")
+    print("Incorreto!")

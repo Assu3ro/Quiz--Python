@@ -1,0 +1,21 @@
+# Definir as perguntas e respostas
+perguntas = {
+    "Qual é a capital do Brasil? ": "Brasília",
+    "Quem escreveu 'Dom Quixote'? ": "Miguel de Cervantes",
+    "Quem pintou a 'Mona Lisa'? ": "Leonardo da Vinci"
+}
+
+# Criar função para exibir as perguntas e coletar as respostas do usuário
+def exibir_perguntas(perguntas):
+    pontuacao = 0
+    for pergunta, resposta in perguntas.items():
+        usuario_resposta = input(pergunta)
+        if usuario_resposta.lower() == resposta.lower():
+            print("Resposta correta!")
+            pontuacao += 1
+        else:
+            print("Resposta incorreta!")
+    print("Sua pontuação final é:", pontuacao)
+
+# Executar a função do quiz
+exibir_perguntas(perguntas)
